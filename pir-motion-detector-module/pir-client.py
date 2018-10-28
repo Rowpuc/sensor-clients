@@ -42,7 +42,7 @@ def motion_callback(channel):
 try:
     GPIO.add_event_detect(DATAPIN, GPIO.RISING, callback=motion_callback)
     while True:
-        time.sleep(100)
+        time.sleep(5)
 except KeyboardInterrupt:
     print "Finish..."
 GPIO.cleanup()

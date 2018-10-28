@@ -62,7 +62,7 @@ while True:
     client.loop_start()
     print("Publishing")
     client.publish("/test/topic", lightJsonPacket)
-    time.sleep(10)
+    time.sleep(3)
   except:
     pass
 
